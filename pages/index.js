@@ -1,3 +1,7 @@
+import ChatRoomContainer from '../containers/ChatRoomContainer';
+
 export default () => (
-  <div>Hello, next.js</div>
+  <div>
+    <ChatRoomContainer />
+  </div>
 );
