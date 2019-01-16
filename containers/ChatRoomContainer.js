@@ -4,6 +4,9 @@ const send = (message) => {
   console.log('send', message);
 }
 
-export default () => (
-  <ChatRoom send={send} />
+export default ({ messages }) => (
+  <ChatRoom
+    messages={messages}
+    send={send}
+  />
 );

@@ -4,10 +4,17 @@ import ChatInput from './ChatInput';
 
 class ChatRoom extends Component {
   render() {
-    const { send } = this.props;
+    const { messages, send } = this.props;
 
     return (
       <div>
+        <ul>
+          {messages.map((message) => (
+            <li>
+              {message.body}
+            </li>
+          ))}
+        </ul>
         <ChatInput send={send} />
       </div>
     );
@@ -15,6 +22,7 @@ class ChatRoom extends Component {
 }
 
 ChatRoom.propTypes = {
+  messages: PropTypes.array.isRequired,
   send: PropTypes.func.isRequired,
 };
 
