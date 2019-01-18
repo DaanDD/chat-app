@@ -3,7 +3,7 @@ const next = require('next');
 const chat = require('../lib/chat');
 
 // Constants
-const PORT = 8080;
+const PORT = 8082;
 const HOST = '0.0.0.0';
 
 const dev = process.env.NODE_ENV !== 'production';;
